@@ -40,7 +40,7 @@ namespace adb_emu_android
 
         private void BtnClickADB_Click(object sender, EventArgs e)
         {
-           string device =  this.comboBoxDevices.SelectedItem != null ? this.comboBoxDevices.SelectedItem.ToString() : "";
+           string device =  this.comboBoxDevices.SelectedItem != null ? comboBoxDevices.SelectedItem.ToString() : "";
             if (!String.IsNullOrEmpty(device))
             {
                 callAdb.Click(device, 122, 168);
